@@ -13,7 +13,7 @@ app.use('/api',(req,res)=>{
     })
 })
 
-let Port = process.env.Port ||3000
+let Port = process.env.PORT ||3000
 
 app.use(express.static(path.join(__dirname, './build')));
 app.get('*', (req, res) => {
