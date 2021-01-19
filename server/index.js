@@ -13,9 +13,11 @@ app.use('/api',(req,res)=>{
     })
 })
 
+let Port = process.env.Port ||3000
+
 app.use(express.static(path.join(__dirname, './build')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
-server.listen('4001',(err)=>err?console.log(err):console.log(`Servidor en puerto ${`4001`}`))
+server.listen(Port,(err)=>err?console.log(err):console.log(`Servidor en puerto ${Port}`))
