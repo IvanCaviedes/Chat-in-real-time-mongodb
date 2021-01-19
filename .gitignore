@@ -1,0 +1,27 @@
+# cliente
+
+# dependencies
+/cliente
+/.pnp
+.pnp.js
+
+# testing
+/cliente/coverage
+
+# production
+/cliente/build
+
+# misc
+/cliente/.DS_Store
+/cliente/.env.local
+/cliente/.env.development.local
+/cliente/.env.test.local
+/cliente/.env.production.local
+
+/cliente/npm-debug.log*
+/cliente/yarn-debug.log*
+/cliente/yarn-error.log*
+
+
+#servidor
+/node_modules
